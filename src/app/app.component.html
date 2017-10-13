@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+  this is header!
+  </h1>
+  </div>
+ <router-outlet> </router-outlet>
+
+
+
+                        <a [routerLink]="['/articles']">ALL ASSETS</a>
+                  
+                    <li *ngIf="user"><a [routerLink]="['/articles/create']">Upload reciept</a> </li>
+                    <!--<li *ngIf="!user"><a [routerLink]="['/authentication/signup']">Signup</a></li>-->
+                    <li *ngIf="!user"><a [routerLink]="['/authentication/signin']">Signin</a></li>
+         
+

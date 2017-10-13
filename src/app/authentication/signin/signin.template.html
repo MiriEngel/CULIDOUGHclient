@@ -1,0 +1,33 @@
+
+
+
+<section class="module login">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12 col-lg-offset-12"> 
+        <p>Don't have an account? <strong><a [routerLink]="['/authentication/signup']">Register here.</a></strong></p> 
+
+        <form  (ngSubmit)="signin()" class="login-form">
+          <div class="form-block">
+             <label>Username:</label>
+        <input class="border" type="text" [(ngModel)]="credentials.username" name="username">
+          </div>
+          <div class="form-block">
+             <label>Password:</label>
+        <input class="border" type="password" [(ngModel)]="credentials.password" name="password">
+          </div>
+          <div class="form-block">
+            <label><input type="checkbox" name="remember" />Remember Me</label><br/>
+          </div>
+          <div class="form-block">
+          <input class="button button-icon"  type="submit" value="Sign In">
+          </div>
+      <span>{{errorMessage}}</span>   
+        </form>
+      </div>
+    </div><!-- end row -->
+
+  </div>
+</section>
